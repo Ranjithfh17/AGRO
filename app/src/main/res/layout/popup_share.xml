@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/popup_back"
+    android:layout_height="wrap_content">
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:id="@+id/share_image"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textStyleBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_as_image"
+            android:textColor="@color/primaryTextColor" />
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+     <in.global.agro.decor.ripple.RippleLinearLayout
+         android:id="@+id/share_pdf"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/exclude_tax"
+             style="@style/textStyleBold"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/share_as_pdf"
+             android:textColor="@color/primaryTextColor" />
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+
+
+
+
+
+</LinearLayout>

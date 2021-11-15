@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/popup_back"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <in.global.agro.decor.ripple.RippleTextView
+        android:id="@+id/include_tax"
+        style="@style/textStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:text="@string/include_tax"
+        android:textColor="@color/primaryTextColor" />
+
+    <in.global.agro.decor.ripple.RippleTextView
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:id="@+id/exclude_tax"
+        style="@style/textStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exclude_tax"
+        android:textColor="@color/primaryTextColor" />
+
+
+</LinearLayout>

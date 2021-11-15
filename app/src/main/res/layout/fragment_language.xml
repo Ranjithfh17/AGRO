@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".ui.dialog.Locales">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/dialog_back"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:elevation="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <in.global.agro.decor.ripple.RippleConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tamil"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/tamil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        </in.global.agro.decor.ripple.RippleConstraintLayout>
+
+        <in.global.agro.decor.ripple.RippleConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/tamil"
+            android:id="@+id/english"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+              />
+        </in.global.agro.decor.ripple.RippleConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

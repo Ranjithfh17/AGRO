@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/home3">
+
+    <fragment
+        android:id="@+id/home3"
+        android:name="in.global.agro.ui.fragments.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="in.global.agro.ui.fragments.Settings"
+        android:label="App Settings"
+        tools:layout="@layout/fragment_settings" />
+    <dialog
+        android:id="@+id/language"
+        android:name="in.global.agro.ui.dialog.Locales"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <dialog
+        android:id="@+id/theme"
+        android:name="in.global.agro.ui.dialog.Theme"
+        android:label="fragment_theme"
+        tools:layout="@layout/fragment_theme" />
+
+    <navigation
+        android:id="@+id/sales_graph"
+        app:startDestination="@id/sales">
+        <fragment
+            android:id="@+id/sales"
+            android:name="in.global.agro.ui.fragments.sales.fragment.Sales"
+            android:label="Sales"
+            tools:layout="@layout/fragment_sales" >
+            <action
+                android:id="@+id/action_sales_to_salesDetails"
+                app:destination="@id/salesDetails" />
+        </fragment>
+        <fragment
+            android:id="@+id/addSales"
+            android:name="in.global.agro.ui.fragments.sales.fragment.AddSales"
+            android:label="Add Sales"
+            tools:layout="@layout/fragment_add_sales">
+            <argument
+                android:defaultValue="@null"
+                android:name="productItem"
+                app:argType="in.global.agro.data.model.ProductItem"
+                app:nullable="true"/>
+        </fragment>
+        <action
+            android:id="@+id/action_global_preview"
+            app:destination="@id/preview" />
+        <fragment
+            android:id="@+id/salesDetails"
+            android:name="in.global.agro.ui.fragments.sales.fragment.SalesDetails"
+            android:label="fragment_sales_details"
+            tools:layout="@layout/fragment_sales_details" >
+            <argument
+                android:name="salesDetail"
+                app:argType="in.global.agro.data.model.SalesModel" />
+        </fragment>
+    </navigation>
+
+    <navigation
+        android:id="@+id/purchase_graph"
+        app:startDestination="@id/purchase">
+        <fragment
+            android:id="@+id/purchase"
+            android:name="in.global.agro.ui.fragments.purchase.Purchase"
+            android:label="Purchase"
+            tools:layout="@layout/fragment_purchase" />
+        <fragment
+            android:id="@+id/addPurchase"
+            android:name="in.global.agro.ui.fragments.purchase.AddPurchase"
+            android:label="Add Purchase"
+            tools:layout="@layout/fragment_add_purchase" />
+        <action
+            android:id="@+id/action_global_purchasePreview"
+            app:destination="@id/purchasePreview" />
+    </navigation>
+
+    <dialog
+        android:id="@+id/icons"
+        android:name="in.global.agro.ui.dialog.Icons"
+        android:label="fragment_icons"
+        tools:layout="@layout/fragment_icons" />
+    <dialog
+        android:id="@+id/share2"
+        android:name="in.global.agro.ui.dialog.Share"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/preview"
+        android:name="in.global.agro.ui.fragments.sales.fragment.SalesPreview"
+        android:label="Share"
+        tools:layout="@layout/fragment_preview">
+        <argument
+            android:name="sales"
+            app:argType="in.global.agro.data.model.SalesModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/save2"
+        android:name="in.global.agro.ui.fragments.Save"
+        android:label="Save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/customerBalance"
+        android:name="in.global.agro.ui.fragments.CustomerBalance"
+        android:label="CustomerBalance"
+        tools:layout="@layout/fragment_customer_balance" />
+    <fragment
+        android:id="@+id/customerStatement"
+        android:name="in.global.agro.ui.fragments.CustomerStatement"
+        android:label="CustomerStatement"
+        tools:layout="@layout/fragment_customer_statement" />
+    <fragment
+        android:id="@+id/productWiseSales"
+        android:name="in.global.agro.ui.fragments.ProductWiseSales"
+        android:label="ProductWiseSales"
+        tools:layout="@layout/fragment_product_wise_sales" />
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="in.global.agro.ui.fragments.receipt.AddReceipt"
+        android:label="Add Receipt"
+        tools:layout="@layout/fragment_add_receipt" />
+    <fragment
+        android:id="@+id/salesInvoice"
+        android:name="in.global.agro.ui.fragments.sales.fragment.SalesInvoice"
+        android:label="fragment_sales_invoice"
+        tools:layout="@layout/fragment_sales_invoice">
+        <action
+            android:id="@+id/action_salesInvoice_to_salesInvoicePreview"
+            app:destination="@id/salesInvoicePreview" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesInvoicePreview"
+        android:name="in.global.agro.ui.fragments.sales.fragment.SalesInvoicePreview"
+        android:label="fragment_sales_invoice_preview"
+        tools:layout="@layout/fragment_sales_invoice_preview">
+        <argument
+            android:name="salesInvoice"
+            app:argType="in.global.agro.data.model.SalesInvoiceModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseInvoice"
+        android:name="in.global.agro.ui.fragments.purchase.PurchaseInvoice"
+        android:label="fragment_purchase_invoice"
+        tools:layout="@layout/fragment_purchase_invoice">
+        <action
+            android:id="@+id/action_purchaseInvoice_to_purchaseInvoicePreview"
+            app:destination="@id/purchaseInvoicePreview" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseInvoicePreview"
+        android:name="in.global.agro.ui.fragments.purchase.PurchaseInvoicePreview"
+        android:label="fragment_purchase_invoice_preview"
+        tools:layout="@layout/fragment_purchase_invoice_preview">
+        <argument
+            android:name="purchaseInvoice"
+            app:argType="in.global.agro.data.model.PurchaseInvoiceModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchasePreview"
+        android:name="in.global.agro.ui.fragments.purchase.PurchasePreview"
+        android:label="fragment_purchase_preview"
+        tools:layout="@layout/fragment_purchase_preview">
+        <argument
+            android:name="purchase"
+            app:argType="in.global.agro.data.model.PurchaseModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/receipt"
+        android:name="in.global.agro.ui.fragments.receipt.Receipt"
+        android:label="fragment_receipt"
+        tools:layout="@layout/fragment_receipt" />
+    <fragment
+        android:id="@+id/addProduct"
+        android:name="in.global.agro.ui.fragments.product.AddProduct"
+        android:label="Add Product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/products"
+        android:name="in.global.agro.ui.fragments.product.Products"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" />
+
+    <dialog
+        android:id="@+id/filterProducts"
+        android:name="in.global.agro.ui.dialog.FilterProducts"
+        android:label="fragment_filter_products"
+        tools:layout="@layout/fragment_filter_products" />
+
+    <dialog
+        android:id="@+id/productsDialog"
+        android:name="in.global.agro.ui.fragments.sales.dialog.ProductsDialog"
+        android:label="fragment_products_dialog"
+        tools:layout="@layout/fragment_products_dialog">
+        <action
+            android:id="@+id/action_productsDialog_to_sales_graph"
+            app:destination="@id/sales_graph" >
+            <argument
+                android:defaultValue="@null"
+                android:name="productItem"
+                app:argType="in.global.agro.data.model.ProductItem"
+                app:nullable="true"/>
+        </action>
+    </dialog>
+
+
+
+</navigation>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackground"
+    android:padding="24dp"
+    tools:context=".ui.activity.LoginActivity">
+
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:id="@+id/language_layout"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/language_back"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="English"
+            android:textColor="@color/primaryTextColor" />
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/icon_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_layout" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hello_nwelcome_to_agro"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_icon" />
+
+    <TextView
+        android:id="@+id/mobile_no_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/enter_your_mobile_number"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_message" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mobile_no_back"
+        app:layout_constraintTop_toBottomOf="@id/mobile_no_hint"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:id="@+id/code_no_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/code_no_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/country_code"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:paddingStart="15dp"
+            android:hint="@string/ex_number"
+            android:id="@+id/mobile_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/code_no_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_otp"
+        style="@style/ButtonStyle.Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/get_otp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintTop_toBottomOf="@id/layout_one" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

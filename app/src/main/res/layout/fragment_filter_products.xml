@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.dialog.FilterProducts">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_back"
+        android:padding="20dp"
+        android:elevation="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:text="@string/all"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/light_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/all"
+            />
+
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/all"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/goods"
+            android:textSize="16sp"
+            android:text="@string/goods"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/dark_text"
+            app:layout_constraintTop_toBottomOf="@id/light_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/goods"
+            />
+
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goods"
+            app:layout_constraintTop_toBottomOf="@id/all"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/services"
+            android:textSize="16sp"
+            android:text="@string/services"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/follow_system_text"
+            app:layout_constraintTop_toBottomOf="@id/dark_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/services"
+            />
+
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/services"
+            app:layout_constraintTop_toBottomOf="@id/goods"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

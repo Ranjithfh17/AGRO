@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryBackground">#FFFFFFFF</color>
+    <color name="secondaryBackground">#F8F8FA</color>
+    <color name="secondaryBackground1">#f2f1f9</color>
+    <color name="primaryTextColor">#001833</color>
+    <color name="textColor">#222831</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="secondaryTextColor">#FF757575</color>
+    <color name="dialogColor">#FFFFFFFF</color>
+    <color name="iconColor">#001833</color>
+    <color name="highlightedTextColor">#5471f1</color>
+    <color name="floatingButtonColor">#5471f1</color>
+    <color name="pink">#ff3e6c</color>
+    <color name="statusBarColor">#FFFFFFFF</color>
+    <color name="menuBackgroundColor">#c0fefc</color>
+    <color name="viewColor">#DDDDDD</color>
+
+    <color name="selectedColor">#40BB86FC</color>
+    <color name="unSelectedColor">#FFFFFFFF</color>
+    <color name="dark">#001833</color>
+
+    <color name="lightBlue">#c0fefc</color>
+    <color name="lightBlue1">#ADD8E6</color>
+    <color name="lightBlue2">#B0C4DE</color>
+    <color name="lightBlue3">#B0E0E6</color>
+    <color name="lightBlue4">#f2f1f9</color>
+    <color name="grey">#808f99</color>
+    <color name="lightGrey">#7099a5ad</color>
+
+    <color name="lightWhite">#F8F8FA</color>
+    <color name="shadowColor">#4096fe</color>
+
+    <color name="blue">#4096fe</color>
+    <color name="blue1">#5471f1</color>
+    <color name="light_blue_400">#5029B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+    <color name="startColor">#dcf8ef</color>
+    <color name="endColor">#fee2f8</color>
+
+    <color name="cardColor">#FFFFFF</color>
+    <color name="popUpColor">#FFFFFF</color>
+
+    <color name="imageIconColor">#c0fefc</color>
+
+</resources>

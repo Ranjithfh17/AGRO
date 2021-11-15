@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    tools:context=".ui.dialog.Theme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_back"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="16sp"
+            android:text="@string/light"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/light_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/light_theme"
+            />
+
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/light_theme"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/darK_theme"
+            android:textSize="16sp"
+            android:text="@string/dark"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/dark_text"
+            app:layout_constraintTop_toBottomOf="@id/light_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/darK_theme"
+            />
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/darK_theme"
+            app:layout_constraintTop_toBottomOf="@id/light_theme"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/follow_system"
+            android:textSize="16sp"
+            android:text="@string/follow_system"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/follow_system_text"
+            app:layout_constraintTop_toBottomOf="@id/dark_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/follow_system"
+            />
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/follow_system"
+            app:layout_constraintTop_toBottomOf="@id/darK_theme"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/auto"
+            android:textSize="16sp"
+            android:text="@string/auto_day_night"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/auto_text"
+            app:layout_constraintTop_toBottomOf="@id/follow_system_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/auto"
+            />
+        <RadioButton
+            android:buttonTint="@color/highlightedTextColor"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto"
+            app:layout_constraintTop_toBottomOf="@id/follow_system"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

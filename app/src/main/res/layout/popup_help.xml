@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/option_dialog_back"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:id="@+id/whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:background="@drawable/icon_back"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                app:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            style="@style/textStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/whatsapp"
+            android:textColor="@color/textColorWhite" />
+
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:visibility="gone"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:background="@drawable/icon_back"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                app:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            style="@style/textStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/textColorWhite" />
+
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:visibility="gone"
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:background="@drawable/icon_back"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                app:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            style="@style/textStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textColor="@color/textColorWhite" />
+
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+    <in.global.agro.decor.ripple.RippleLinearLayout
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:background="@drawable/icon_back"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                app:tint="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            style="@style/textStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call"
+            android:textColor="@color/textColorWhite" />
+
+    </in.global.agro.decor.ripple.RippleLinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
